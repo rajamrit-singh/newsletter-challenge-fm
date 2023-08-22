@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 5fr 5fr 4fr;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+}
+
+.image-container {
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 2.5rem 2.5rem;
+}
+
+.ad-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 2rem 1rem 2rem 1rem; 
+}
+
+div.ad-container > span {
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.ad-title {
+    position: relative;
+    font-size: 3rem;
+}
+
+div.ad-container > span {
+    position: relative;
+    font-size: x-large;
+}
+
+li {
+    font-size: x-large;
+    list-style-image: url(./assets/images/icon-list.svg);
+}
+
+.submit-button {
+    color: #fff;
+    background-color: #232742;
+}
+
+
+.form-label-email {
+    font-size: larger;
+}
+
+.form-container {
+    margin: 1rem 5% 1rem 5%;
+    width: 90%
+}
+.submit-button, .form-input-email{
+    margin-top: 4%;
+    margin-bottom: 5%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    width: 100%;
+}
