@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css" />
+    <script src="dist/app.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <main>
-        <div id="main">
+        <div id="main" hidden>
             <div class="image-container">
             </div>
             <div class="ad-container">
@@ -24,10 +25,23 @@
                     <li>And much more</li>
                 </ul>
             </div>
-            <div class="form-container">
+            <form class="form-container" onsubmit="onFormSubmit(event)">
                 <label class="form-label-email"><b>Email address</b></label>
                 <input class="form-input-email" type="email" placeholder="email@company.com"/>
                 <button class="submit-button" type="submit">Subscribe to monthly newsletter</button>
+            </form>            
+        </div>
+
+        <div id="success-page">
+            <div></div>
+            <div class="success-icon"></div>
+            <div class="thank-you-message">
+                <h1>Thanks for Subscribing</h1>
+                <p>A confirmation email has been sent to <b><span id="email-address"></span></b>. Please open it and click the button inside to confirm your subscription</p>
+            </div>
+            <div></div>
+            <div>
+                <button>Dismiss Message</button>
             </div>
         </div>
     </main>

@@ -5,14 +5,16 @@ body {
     margin: 0;
 }
 
-#main {
+#main, #success-page {
     display: grid;
-    grid-template-rows: 5fr 5fr 4fr;
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
+
     position: absolute;
+}
+
+#main {
+    grid-template-rows: 5fr 5fr 4fr;
 }
 
 .image-container {
@@ -70,4 +72,23 @@ li {
     border-radius: 0.5rem;
     font-size: large;
     width: 100%;
+}
+
+#success-page {
+    grid-template-rows: 2.5fr 1fr 2.5fr 3fr 1fr;
+    padding: 5%;
+    display: none;
+}
+
+.success-icon {
+    background-image: url(./assets/images/icon-success.svg);
+    background-repeat: no-repeat;
+}
+
+.thank-you-message h1 {
+    font-size: 2.5rem;
+}
+
+.thank-you-message p {
+    font-size: 1.3rem;
 }
